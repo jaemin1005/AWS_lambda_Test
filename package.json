@@ -1,8 +1,8 @@
 {
-  "name": "aws_lambda_test",
+  "name": "express-lambda-ts",
   "version": "1.0.0",
+  "main": "dist/aws_lambda.js",
   "description": "",
-  "main": "src/aws_lambda.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
