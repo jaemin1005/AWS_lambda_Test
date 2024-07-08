@@ -3,11 +3,11 @@ service: express-lambda-ts
 provider:
   name: aws
   runtime: nodejs20.x
-  region: us-east-1
+  region: ap-northeast-2
 
 functions:
   app:
-    handler: dist/aws_lambda.handler
+    handler: src/aws_lambda.handler
     events:
       - http:
           path: /
