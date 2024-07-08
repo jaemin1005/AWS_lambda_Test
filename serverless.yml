@@ -7,7 +7,7 @@ provider:
 
 functions:
   app:
-    handler: src/aws_lambda.handler
+    handler: dist/aws_lambda.handler
     events:
       - http:
           path: /
@@ -19,7 +19,7 @@ functions:
 package:
   individually: true
   patterns:
-    - '!node_modules/**'
+    - '!node_modules/aws-sdk/**' 
     - '!.gitignore'
     - '!.git/**'
     - '!.serverless/**'
